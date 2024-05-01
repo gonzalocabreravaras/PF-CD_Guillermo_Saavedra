@@ -1,0 +1,299 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    h1{
+      font-size: 40px;
+    }
+    h2{
+      font-size: 40px;
+    }
+    h3{
+      font-size: 25px;
+    }
+    h4{
+      font-size: 20px;
+    }
+    
+}
+
+/*HEADER*/
+
+header {
+ display: flex;
+ align-items: center;
+ background-color: #ffffff;
+ margin: 0px 100px 0px 100px;
+  }
+
+.logo{
+  height: 70px;
+  margin-right: 40px;
+}
+
+.gc-style-nav{
+  background-color: #ffffff;
+}
+
+.navbar{
+  
+  width: 50%;
+
+  @media (max-width: 992px) {
+    width: 100%;
+    
+  }
+}
+
+.navbar a:hover{
+  color: #17467c;
+}
+
+
+
+.container-rrss{
+  width: 50%;
+  display: flex;
+  justify-content: end;
+
+    @media (max-width: 992px) {
+    display: none;
+      
+   }
+}
+
+.navbar-toggler-icon{
+  display: flex;
+  justify-content: end;
+}
+
+.container-rrss-elemento img {
+    width: 25px;
+    margin: 3px;
+  }
+
+  /*BODY*/
+
+.hero{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    color: #ffffff;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    ,url(/assets/images/estadio-gs.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+    button{
+        margin-top: 25px;
+        padding: 10px 20px;
+    }
+}    
+
+
+.hero h1{
+    padding: 300px 0px 0px 0px;
+}
+    
+.hero p{
+    font-size: 25px;
+}
+
+.container-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 70px;
+}
+
+.container-card-elemento {
+  flex-basis: calc(50% - 1rem);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container-card-elemento {
+    flex-basis: calc(50% - 1rem); 
+  }
+}
+
+@media (min-width: 992px) {
+
+  .container-card-elemento {
+    flex-basis: calc(25% - 1rem);
+  }
+}
+
+.container-card-elemento img{
+  width: 55px;
+  padding-bottom: 30px;
+}
+
+
+main{
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.main-history{
+  margin-left: 110px;
+  margin-right: 110px;
+}
+
+main div h2{
+  padding-bottom: 30px;
+  color: #17467c;
+  font-weight: 700;
+}
+
+main div p{
+  margin: 0px 80px;
+}
+
+.main-history h2{
+  color: #17467c;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.banner img{
+  max-width: 100%;
+  justify-content: center;
+  margin-right: 80px;
+  padding-bottom: 100px;
+}
+
+.banner-history{
+  max-width: 100%;
+  justify-content: center;
+  margin-right: 80px;
+  padding-bottom: 100px;
+}
+
+.container-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-galeria-imagen {
+  width: calc(33.33% - 1rem);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.container-galeria-imagen img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .container-galeria-imagen {
+    width: calc(50% - 1rem);
+  }
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.boton-envio {
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;a
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+.boton-envio:hover {
+  background-color: #123f72;
+  color: #ffffff;
+}
+
+
+
+
+footer{
+  text-align: center;
+  background-color: darkgrey;
+  padding: 20px;
+}
+
+.nav-footer{
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+.nav-footer-legal{
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+  }
+  }
+}
+
+a:hover{
+  color: #17467c;
+}
+
+.boton-envio {
+  color: #17467c;
+}
+
+footer div{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer p{
+  font-size: 14px;
+  padding: 0px 80px;
+}
+
+footer a{
+  color: #17467c;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px;
+}
+
+footer nav a{
+  color: #171717;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.container-rrss-footer-elemento img {
+  width: 25px;
+  margin: 3px;
+}
