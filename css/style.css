@@ -3,20 +3,6 @@
     padding: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
-
-    h1{
-      font-size: 40px;
-    }
-    h2{
-      font-size: 40px;
-    }
-    h3{
-      font-size: 25px;
-    }
-    h4{
-      font-size: 20px;
-    }
-    
 }
 
 /*HEADER*/
@@ -89,7 +75,7 @@ header {
         rgba(0,0,0,0.6),
         rgba(0,0,0,0.6)
     )
-    ,url(./assets/images/estadio-gs.jpg);
+    ,url(../assets/images/estadio-gs.jpg);
     background-position: center;
     background-size: cover;
     margin-top: 0px;
@@ -319,63 +305,209 @@ header {
 }
 
 
-.container-galeria {
+
+/*TEAMS*/
+
+.contenedor-teams{
+  display: flex;
+  flex-direction: column;
+  margin: 100px 100px 100px 100px;
+}
+
+.contenedor-teams__primera{
+  display: flex; 
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.contenedor-teams__primera__titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+
+}
+
+.contenedor-teams__primera__imagen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+
+.contenedor-teams__primera__imagen img{
+  width: 600px;
+  border-radius: 8px
+}
+
+.contenedor-teams__segunda{
+  display: flex; 
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.contenedor-teams__segunda__imagen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.contenedor-teams__segunda__titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+
+}
+
+.contenedor-teams__segunda__imagen img{
+  width: 600px;
+  border-radius: 8px
+}
+
+.contenedor-teams__tercera{
+  display: flex; 
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.contenedor-teams__tercera__titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+
+}
+
+.contenedor-teams__tercera__imagen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.contenedor-teams__tercera__imagen img{
+  width: 600px;
+  border-radius: 8px;
+}
+
+
+
+@media (max-width: 1080px) {
+  .contenedor-teams__primera__titulo,
+  .contenedor-teams__primera__imagen,
+  .contenedor-teams__segunda__titulo,
+  .contenedor-teams__segunda__imagen,
+  .contenedor-teams__tercera__titulo,
+  .contenedor-teams__tercera__imagen {
+    width: 100%;
+  }
+
+  .contenedor-teams__primera__titulo,
+  .contenedor-teams__segunda__titulo,
+  .contenedor-teams__tercera__titulo {
+    padding-bottom: 30px;
+    padding-bottom: 30px;
+    color: #17467c;
+    font-weight: 700;
+  }
+
+  .contenedor-teams__primera,
+  .contenedor-teams__segunda,
+  .contenedor-teams__tercera {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+}
+
+
+/*GALERIA*/
+
+.contenedor-main{
+  padding: 50px;
+}
+
+.contenedor-main__titulo{
+  padding-bottom: 30px;
+  padding-bottom: 30px;
+  color: #17467c;
+  font-weight: 700;
+}
+
+.contenedor-main__galeria {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.container-galeria-imagen {
+.contenedor-main__galeria__elemento{
+  display: flex;
   width: calc(33.33% - 1rem);
   margin-bottom: 1rem;
   text-align: center;
 }
 
-.container-galeria-imagen img {
+.contenedor-main__galeria__elemento img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 8px;
 }
 
-@media (max-width: 768px) {
-  .container-galeria-imagen {
+@media (max-width: 1080px) {
+  .contenedor-main__galeria__elemento {
     width: calc(50% - 1rem);
   }
 }
 
+@media (max-width: 720px) {
+  .contenedor-main__galeria__elemento {
+    width: calc(100% - 1rem);
+  }
+}
 
-form {
+
+/*CONTACTO*/
+
+.contenedor-formulario{
+  margin: 50px 300px 100px 300px;
+  justify-content: center;
+}
+
+.contenedor-formulario__titulo{
   display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-bottom: 30px;
+  color: #17467c;
+  font-weight: 700;
+  justify-content: center;
+
 }
 
-label {
-  margin-bottom: 0.5rem;
+@media (max-width: 991px) {
+  .contenedor-formulario{
+    margin: 50px 80px 100px 80px;
+  }
+   
 }
 
-input[type="text"],
-input[type="number"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+.contenedor-formulario .gc-style-boton{
+  background-color: #17467c;
+  border: 0px;
 }
 
-.boton-envio {
-  border: none;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;a
-  font-size: 1rem;
-  margin-top: 30px;
-}
-
-.boton-envio:hover {
-  background-color: #123f72;
-  color: #ffffff;
+.contenedor-formulario .gc-style-boton:hover{
+  background-color: #2868b2;
 }
