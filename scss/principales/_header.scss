@@ -7,7 +7,7 @@ header{
 }
 
 .logo{
-  height: 70px;
+  height: map-get($estilos, "ancho-logo");
   margin-right: 40px;
 }
 

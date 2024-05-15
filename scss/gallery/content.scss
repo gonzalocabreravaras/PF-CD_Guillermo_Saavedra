@@ -26,6 +26,7 @@
                   height: auto;
                   object-fit: cover;
                   border-radius: 8px;
+                  @include zoom-hover;
               }
           }
 
@@ -33,6 +34,7 @@
       }
 }
   
+
   @media (max-width: 1080px) {
     .contenedor-main__galeria__elemento {
       width: calc(50% - 1rem);

@@ -1,10 +1,11 @@
 //RESET
+@import "./reset/mixin";
 @import "./reset/variables";
 @import "./reset/configuracion";
 
 
 //HEADER
-@import "header";
+@import "./principales/header";
 
 //BODY
 @import "./index/content.scss";
@@ -14,4 +15,4 @@
 @import "./contact/content.scss";
 
 //FOOTER
-@import "footer.scss";
+@import "./principales/footer";

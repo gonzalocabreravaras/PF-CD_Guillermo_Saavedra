@@ -49,6 +49,7 @@
                 &__imagen{
                     width: 60px;
                     padding-bottom: 25px;
+                    @include zoom-hover;
                 }
 
                 &__texto{

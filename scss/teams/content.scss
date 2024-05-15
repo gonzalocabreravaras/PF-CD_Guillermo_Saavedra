@@ -28,9 +28,10 @@
                   width: 70%;
 
                   & img{
-                      width: 600px;
-                      border-radius: 8px
-                  }
+                    width: 600px;
+                    border-radius: 8px;
+                    @include zoom-hover;
+                }
               }
       }
 
@@ -56,10 +57,11 @@
                   align-items: center;
                   width: 70%;
                   
-                      & img{
-                          width: 600px;
-                          border-radius: 8px
-                      }
+                  & img{
+                    width: 600px;
+                    border-radius: 8px;
+                    @include zoom-hover;
+                }
               }
       }
 
@@ -88,6 +90,7 @@
                   & img{
                       width: 600px;
                       border-radius: 8px;
+                      @include zoom-hover;
                   }
               }
       }
