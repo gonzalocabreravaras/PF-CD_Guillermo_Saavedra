@@ -1,0 +1,117 @@
+  /*HERO*/
+
+  .contenedor-hero{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    color: $blanco;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    ,url(../assets/images/estadio-gs.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+    
+            & button{
+                margin-top: 25px;
+                padding: 10px 20px;
+            }
+
+        &__titulo{
+            padding: 300px 0px 0px 0px;
+        }
+
+        &__bajada{
+            font-size: 25px;
+        }
+}
+
+ /*cards*/
+
+.contenedor-cards{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px;
+
+        &__elemento{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-basis: calc(50% - 20px);
+            box-sizing: border-box;
+            padding-block: 30px;
+
+                &__imagen{
+                    width: 60px;
+                    padding-bottom: 25px;
+                }
+
+                &__texto{
+                    text-align: center;
+                }
+        }
+}
+
+ /*MAIN*/
+
+.contenedor-main{
+    max-width: 100%;
+    text-align: center;
+    padding-bottom: 100px;
+
+        &__banner{
+
+            &__imagen{
+                max-width: 100%;
+                margin-bottom: 100px;
+                border-radius: 8px;
+            }
+        }
+
+        &__historia{
+
+            &__titulo{
+                padding-bottom: 30px;
+                color: $principal;
+                font-weight: 700;
+            }
+
+            &__texto{
+                margin: 0px 110px 0px 110px;
+            }
+        }
+}
+
+.main-history{
+
+    & h2{
+        color: $principal;
+        font-weight: 700;
+        padding-bottom: 30px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .contenedor-cards {
+    flex-wrap: wrap;
+  }
+
+  .contenedor-cards__elemento {
+    flex-basis: calc(50% - 20px);
+    margin-right: 20px;
+  }
+
+  .contenedor-cards__elemento:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+

@@ -1,0 +1,23 @@
+/*PAGINA HISTORIA*/
+
+.contenedor-cabecera{
+  max-width: 100%;
+  justify-content: center;
+  margin-bottom: 100px; 
+
+      &__imagen{
+          width: 100%;
+      }
+}
+
+.contenedor-historia{
+  text-align: center;
+  padding-bottom: 100px;
+  margin: 0px 110px 0px 110px;
+
+   &__titulo{
+       padding-bottom: 30px;
+       color: $principal;
+       font-weight: 700;
+  }
+}

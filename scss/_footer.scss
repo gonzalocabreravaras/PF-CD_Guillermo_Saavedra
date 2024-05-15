@@ -1,0 +1,101 @@
+/*FOOTER*/
+
+.contenedor-footer{
+  display: block;
+  background-color: $gris;
+
+      &__rrss{
+        display: flex;
+        height: 110px;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 30px;
+
+          &__elemento{
+            display: flex;
+            margin-left: 10px;
+          }
+      }
+
+      &__nav-footer{
+          display: flex;
+          justify-content: center;
+          padding-top: 30px;
+          padding-bottom: 30px;
+
+              &__navbar{
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+
+                      &__elemento{
+                          color: #171717;
+                          text-decoration: none;
+                          font-size: 16px;
+                          padding: 10px;
+
+                              &:hover{
+                                  color: $principal;
+                              }
+                      }
+              }
+      }
+
+
+      &__reseña{
+          display: flex;
+          justify-content: center;
+          margin: 30px 150px 30px 150px;
+
+              &__texto{
+                  text-align: center;
+                  font-size: 14px;
+              }
+      }
+
+      &__nav-legal{
+          display: flex;
+          justify-content: center;
+          padding-top: 30px;
+          padding-bottom: 30px;
+
+              &__navbar{
+
+                  &__elemento{
+                      text-decoration: none;
+                      color: #171717;
+                      margin-right: 20px;
+                      font-size: 14px;
+
+                          &:hover{
+                              color: $principal;
+                          }
+                  }
+              }
+      }
+
+      &__linea{
+          color: $gris-2;
+      }
+}
+
+  
+  @media (max-width: 576px) {
+    .contenedor-footer__nav-footer__navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+
+  
+@media (max-width: 576px) {
+   .contenedor-footer__nav-legal__navbar__elemento{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 10px;
+    }
+        
+ }
+  

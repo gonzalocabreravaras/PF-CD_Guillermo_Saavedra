@@ -1,0 +1,67 @@
+/*HEADER*/
+header{
+  display: flex;
+  align-items: center;
+  background-color: $blanco;
+  margin: 0px 100px 0px 100px;
+}
+
+.logo{
+  height: 70px;
+  margin-right: 40px;
+}
+
+.gc-style-nav{
+  background-color: $blanco;
+  ;
+}
+
+.navbar{
+  width: 50%;
+
+      &:hover{
+          color: $principal;
+          ;
+      }
+}
+
+.container-rrss{
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+.navbar-toggler-icon{
+  display: flex;
+  justify-content: end;
+}
+
+.container-rrss-elemento{
+
+  & img{
+      width: 25px;
+      margin: 3px;
+  }   
+}
+   
+ 
+   
+@media (max-width: 992px) {
+  .navbar{
+    width: 100%;
+       
+  }
+}
+
+   
+   
+   
+@media (max-width: 992px) {
+    .container-rrss{
+      display: none;
+    }
+         
+}
+
+
+   
