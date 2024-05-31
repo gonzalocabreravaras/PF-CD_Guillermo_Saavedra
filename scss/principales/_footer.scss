@@ -80,7 +80,7 @@
 }
 
   
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     .contenedor-footer__nav-footer__navbar {
       flex-direction: column;
       align-items: center;
@@ -89,12 +89,20 @@
   
 
   
-@media (max-width: 576px) {
+@media (max-width: 768px) {
    .contenedor-footer__nav-legal__navbar__elemento{
       display: flex;
       flex-direction: column;
       align-items: center;
       padding-bottom: 10px;
+    }
+
+    .contenedor-footer__reseña{
+      margin: 60px;
+    }
+
+    .contenedor-footer__reseña__texto{
+      margin: 0px;
     }
         
  }

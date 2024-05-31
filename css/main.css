@@ -30,6 +30,9 @@ header {
 .navbar:hover {
   color: #17467c;
 }
+.navbar .nav-link:hover {
+  color: #17467c;
+}
 
 .container-rrss {
   width: 50%;
@@ -47,6 +50,11 @@ header {
   margin: 3px;
 }
 
+@media (max-width: 768px) {
+  header {
+    margin: 0px 60px;
+  }
+}
 @media (max-width: 992px) {
   .navbar {
     width: 100%;
@@ -76,9 +84,12 @@ header {
 }
 .contenedor-hero__titulo {
   padding: 300px 0px 0px 0px;
+  font-size: 50px;
+  font-weight: 700;
 }
 .contenedor-hero__bajada {
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 /*cards*/
@@ -144,6 +155,9 @@ header {
   .contenedor-cards__elemento:nth-child(2n) {
     margin-right: 0;
   }
+  .contenedor-main__historia__texto {
+    margin: 0px;
+  }
 }
 /*PAGINA HISTORIA*/
 .contenedor-cabecera {
@@ -166,6 +180,11 @@ header {
   font-weight: 700;
 }
 
+@media (max-width: 992px) {
+  .contenedor-historia {
+    margin: 60px;
+  }
+}
 /*TEAMS*/
 .contenedor-teams {
   display: flex;
@@ -282,6 +301,12 @@ header {
   .contenedor-teams__tercera {
     flex-direction: column;
     margin-bottom: 50px;
+  }
+}
+@media (max-width: 1080px) and (max-width: 768px) {
+  .contenedor-teams img {
+    padding: 0px 120px;
+    border-radius: 8px;
   }
 }
 /*GALERIA*/
@@ -416,18 +441,24 @@ header {
   color: #adadad;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .contenedor-footer__nav-footer__navbar {
     flex-direction: column;
     align-items: center;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .contenedor-footer__nav-legal__navbar__elemento {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 10px;
+  }
+  .contenedor-footer__reseña {
+    margin: 60px;
+  }
+  .contenedor-footer__reseña__texto {
+    margin: 0px;
   }
 }
 

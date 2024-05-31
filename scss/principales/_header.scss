@@ -6,6 +6,7 @@ header{
   margin: 0px 100px 0px 100px;
 }
 
+
 .logo{
   height: map-get($estilos, "ancho-logo");
   margin-right: 40px;
@@ -21,8 +22,11 @@ header{
 
       &:hover{
           color: $principal;
-          ;
       }
+
+        .nav-link:hover{
+          color: $principal;
+        }
 }
 
 .container-rrss{
@@ -44,7 +48,12 @@ header{
   }   
 }
    
- 
+
+@media (max-width: 768px) {
+  header{
+       margin: 0px 60px;
+  }
+}
    
 @media (max-width: 992px) {
   .navbar{

@@ -122,5 +122,14 @@
       flex-direction: column;
       margin-bottom: 50px;
     }
+
+    @media (max-width: 768px) {
+      .contenedor-teams img{
+        padding: 0px 120px;
+        border-radius: 8px;
+      }
   
   }
+
+  
+}

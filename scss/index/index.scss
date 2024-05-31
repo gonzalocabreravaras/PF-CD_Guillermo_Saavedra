@@ -24,10 +24,13 @@
 
         &__titulo{
             padding: 300px 0px 0px 0px;
+            font-size: 50px;
+            font-weight: 700;
         }
 
         &__bajada{
-            font-size: 25px;
+            font-size: 30px;
+            font-weight: 500;
         }
 }
 
@@ -101,6 +104,7 @@
 
 
 @media (max-width: 768px) {
+    
   .contenedor-cards {
     flex-wrap: wrap;
   }
@@ -112,6 +116,10 @@
 
   .contenedor-cards__elemento:nth-child(2n) {
     margin-right: 0;
+  }
+
+  .contenedor-main__historia__texto{
+    margin: 0px;
   }
 }
 
