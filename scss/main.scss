@@ -8,11 +8,11 @@
 @import "./principales/header";
 
 //BODY
-@import "./index/content.scss";
-@import "./history/content.scss";
-@import "./teams/content.scss";
-@import "./gallery/content.scss";
-@import "./contact/content.scss";
+@import "./index/index";
+@import "./pages/history";
+@import "./pages/teams";
+@import "./pages/gallery";
+@import "./pages/contact";
 
 //FOOTER
 @import "./principales/footer";
